@@ -9,28 +9,22 @@
 
 ?>
 
-<header id="masthead">
+<header id="masthead" class="flex justify-between">
 
 	<div>
-		<?php
-		if ( is_front_page() ) :
-			?>
-			<h1><?php bloginfo( 'name' ); ?></h1>
-			<?php
-		else :
-			?>
-			<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-			<?php
-		endif;
-
-		$stubgroup_description = get_bloginfo( 'description', 'display' );
-		if ( $stubgroup_description || is_customize_preview() ) :
-			?>
-			<p><?php echo $stubgroup_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-		<?php endif; ?>
+	<?php
+		if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+		}
+	?>	
 	</div>
 
-	<nav id="site-navigation" aria-label="<?php esc_attr_e( 'Main Navigation', 'stubgroup' ); ?>">
+	<?php if ( is_active_sidebar( 'header-widget-area' ) ) : ?>
+    	<div id="header-widget-area" class="hw-widget widget-area flex" role="complementary">
+        	<?php dynamic_sidebar( 'header-widget-area' ); ?>
+    	</div>
+	<?php endif; ?>
+	<!-- <nav id="site-navigation" aria-label="<?php esc_attr_e( 'Main Navigation', 'stubgroup' ); ?>">
 		<button aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'stubgroup' ); ?></button>
 
 		<?php
@@ -42,6 +36,6 @@
 			)
 		);
 		?>
-	</nav><!-- #site-navigation -->
+	</nav>#site-navigation -->
 
 </header><!-- #masthead -->

@@ -117,6 +117,14 @@ if ( ! function_exists( 'stubgroup_setup' ) ) :
 
 		// Remove support for block templates.
 		remove_theme_support( 'block-templates' );
+
+		add_theme_support( 'custom-logo', array(
+			'height'      => 100, // La altura del logo en pixeles
+			'width'       => 300, // El ancho del logo en pixeles
+			'flex-height' => true, // Permite ajustar la altura del logo
+			'flex-width'  => true, // Permite ajustar el ancho del logo
+			'header-text' => array( 'site-title', 'site-description' ), // Clases CSS para ocultar el título y la descripción del sitio cuando hay logo
+		) );
 	}
 endif;
 add_action( 'after_setup_theme', 'stubgroup_setup' );
@@ -138,6 +146,13 @@ function stubgroup_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar( array(
+        'name'          => __( 'Header Widget Area', 'textdomain' ),
+        'id'            => 'header-widget-area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+    ));
 }
 add_action( 'widgets_init', 'stubgroup_widgets_init' );
 

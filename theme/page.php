@@ -17,7 +17,7 @@ get_header();
 	<section id="primary">
 		<main id="main">
 
-			<?php
+			<!-- <?php
 
 			/* Start the Loop */
 			while ( have_posts() ) :
@@ -32,8 +32,7 @@ get_header();
 				}
 
 			endwhile; // End of the loop.
-			?>
-
+			?> -->
 		</main><!-- #main -->
 	</section><!-- #primary -->
 

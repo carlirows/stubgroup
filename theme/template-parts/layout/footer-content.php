@@ -11,7 +11,7 @@
 
 <footer id="colophon">
 
-	<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
+	<!-- <?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>
 		<aside role="complementary" aria-label="<?php esc_attr_e( 'Footer', 'stubgroup' ); ?>">
 			<?php dynamic_sidebar( 'sidebar-1' ); ?>
 		</aside>
@@ -47,6 +47,6 @@
 			'WordPress'
 		);
 		?>
-	</div>
+	</div> -->
 
 </footer><!-- #colophon -->
