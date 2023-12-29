@@ -14,3 +14,213 @@
 body {
 	@apply bg-background text-foreground font-sans;
 }
+
+/* home banner */
+
+.wp-block-cover {
+    @apply h-[622px] justify-start
+}
+.wp-block-cover span{
+    @apply !opacity-[0.7] md:!opacity-[0.2]
+}
+.wp-block-cover .wp-block-cover__image-background{
+	@apply max-w-[923px] ml-auto md:block
+}
+.wp-block-cover .wp-block-cover__inner-container{
+	@apply max-w-[60rem] ml-[1rem] mr-[1rem] lg:ml-[8rem] md:mr-0
+}
+.wp-block-cover .wp-block-cover__inner-container h1{
+	@apply mb-12 text-3xl sm:text-4xl md:text-6xl text-deep-blue whitespace-nowrap text-center md:text-left
+}
+.wp-block-cover .wp-block-cover__inner-container ul{
+	@apply text-xl md:text-2xl text-text-blue list-none pl-0 
+}
+.wp-block-cover .wp-block-cover__inner-container ul li::before{
+	@apply content-["\2022"] text-stub-blue font-bold inline-block w-4 mx-4  list-outside absolute md:!relative left-0
+}
+.wp-block-cover .wp-block-cover__inner-container .wp-block-buttons .wp-block-button a{
+	@apply outline outline-2 bg-transparent hover:bg-stub-blue outline-stub-blue text-stub-blue hover:text-white text-xl md:text-2xl no-underline
+}
+.wp-block-cover .wp-block-cover__inner-container .wp-block-buttons .wp-block-button {
+	@apply w-full max-w-none md:max-w-56
+}
+.wp-block-cover .wp-block-cover__inner-container .wp-block-buttons {
+	@apply mt-16
+}
+
+/* problem section */
+
+.entry-content .problem-solution-section {
+	@apply bg-pale-blue px-8 md:px-12 py-24
+}
+.entry-content .problem-solution-section .wp-block-columns {
+	@apply !max-w-[1440px] mx-auto flex flex-col lg:flex-row !flex-nowrap
+}
+.entry-content .problem-solution-section .wp-block-columns .wp-block-column:nth-child(1) {
+	@apply order-2 lg:order-1
+}
+.entry-content .problem-solution-section .wp-block-columns .wp-block-column:nth-child(1) figure{
+	@apply mt-0 mb-0
+}
+
+.entry-content .problem-solution-section .wp-block-columns .wp-block-column:nth-child(2) {
+	@apply order-1 lg:order-2 ml-0 lg:ml-24
+}
+.entry-content .problem-solution-section .wp-block-columns .wp-block-column:nth-child(2) h2{
+	@apply mt-0 text-3xl md:text-4xl text-deep-blue max-w-[550px]
+}
+.entry-content .problem-solution-section .wp-block-columns .wp-block-column:nth-child(2) p{
+	@apply mt-0 text-xl text-text-blue max-w-[520px]
+}
+.entry-content .problem-solution-section .wp-block-columns .wp-block-column:nth-child(2) .wp-block-buttons{
+	@apply mt-12
+}
+.entry-content .problem-solution-section .wp-block-columns .wp-block-column:nth-child(2) .wp-block-buttons .wp-block-button{
+	@apply w-full max-w-none md:max-w-56
+
+}
+.entry-content .problem-solution-section .wp-block-columns .wp-block-column:nth-child(2) .wp-block-buttons .wp-block-button a{
+    @apply bg-stub-blue hover:bg-transparent hover:outline hover:outline-2 hover:outline-stub-blue hover:text-stub-blue text-white py-4 text-lg lg:text-2xl rounded-lg no-underline
+}
+
+/* suspension types */
+
+.suspension-types {
+	@apply px-8 md:px-12 py-24
+}
+.suspension-types h2{
+	@apply mt-0 text-3xl md:text-4xl text-deep-blue 
+}
+.suspension-types div .wp-block-column{
+	@apply shadow-md px-4 py-8 rounded-lg mb-8	
+}
+.suspension-types div .wp-block-column h3{
+	@apply mt-0 italic text-2xl text-deep-blue 
+}
+.suspension-types div .wp-block-column p{
+	@apply mt-0 text-xl text-stub-blue leading-6
+}
+
+/* success-stories */
+
+.success-stories {
+	@apply px-8 md:px-12 py-24
+}
+.success-stories h2{
+	@apply mt-0 text-3xl md:text-4xl text-deep-blue 
+}
+.WidgetTitle__Header-sc-ruy1gu-2.huflDf{
+	@apply my-12 text-3xl md:text-4xl text-deep-blue 
+}
+/* FAQS */
+.faq-section {
+	@apply  px-8 md:px-12 py-24
+}
+.faq-section h2{
+	@apply mt-0 mb-12 text-3xl md:text-4xl text-deep-blue 
+}
+ #sp_easy_accordion-1703632409 .sp-easy-accordion .ea-card{
+	@apply bg-transparent border-stub-blue
+ }
+ #sp_easy_accordion-1703632409 .sp-easy-accordion .ea-card h3 a{
+	@apply text-xl md:text-2xl font-bold !text-stub-blue
+ }
+ #sp_easy_accordion-1703632409 .sp-easy-accordion .ea-card h3 a i{
+	@apply text-2xl font-bold !text-deep-blue mr-6
+ }
+ #sp_easy_accordion-1703632409 .sp-easy-accordion .ea-card .sp-collapse .ea-body p{
+	@apply text-xl !text-text-blue
+ }
+
+
+ /* CTA home banner */
+
+.wp-block-cover.cta-banner-home {
+    @apply h-[622px] justify-start
+}
+.wp-block-cover.cta-banner-home span.wp-block-cover__background{
+    @apply !opacity-[0]
+}
+.wp-block-cover.cta-banner-home .wp-block-cover__image-background{
+	@apply max-w-none md:block
+}
+.wp-block-cover.cta-banner-home .wp-block-cover__inner-container{
+	@apply max-w-[60rem] ml-[1rem] mr-[1rem] lg:ml-[50%] md:mr-0
+}
+.wp-block-cover.cta-banner-home .wp-block-cover__inner-container > p {
+	@apply mb-12 !text-4xl md:!text-6xl leading-[66px] text-white whitespace-normal text-center md:text-left
+}
+.wp-block-cover.cta-banner-home .wp-block-cover__inner-container p:nth-child(2) {
+	@apply mb-12 !text-xl max-w-none md:max-w-[520px] !mx-0 text-white whitespace-normal text-center md:text-left
+}
+.wp-block-cover.cta-banner-home .wp-block-cover__inner-container div form {    
+	@apply flex flex-col md:flex-row gap-5
+}
+.wp-block-cover.cta-banner-home .wp-block-cover__inner-container div form p:nth-child(1) {    
+	@apply w-full md:w-[50%] !mb-0
+}
+.wp-block-cover.cta-banner-home .wp-block-cover__inner-container div form p:nth-child(2) {    
+	@apply w-full md:w-[50%] mt-10 !mx-auto mb-0
+}
+.wp-block-cover.cta-banner-home .wp-block-cover__inner-container div form p input{    
+	@apply !text-2xl px-10 py-2 bg-stub-blue font-bold rounded-lg mt-0 md:mt-[67px] w-full
+}
+.wp-block-cover.cta-banner-home .wp-block-cover__inner-container div form p label{    
+	@apply !text-2xl
+}
+.wp-block-cover.cta-banner-home .wp-block-cover__inner-container div form p label span input{    
+	@apply !bg-transparent !outline !outline-1 !outline-white opacity-100 mt-4 w-full rounded-lg
+}
+
+
+/* get stareted form */
+
+.get-started h2{
+	@apply mt-0 text-3xl md:text-4xl text-deep-blue !mb-0
+}
+.get-started{
+	@apply pt-24
+}
+.get-started div.wpcf7 form   {
+	@apply p-8
+}
+.get-started div.wpcf7 form p  {
+	@apply !my-0 max-w-[520px] mx-auto
+}
+.get-started div.wpcf7 form p label span input {
+	@apply border border-deep-blue rounded-lg mt-3 mb-6 max-w-[90%]
+}
+.get-started div.wpcf7 form p:nth-child(2){
+	@apply text-xl text-stub-blue font-bold
+}
+.get-started div.wpcf7 form p:nth-child(3){
+	@apply text-xl text-stub-blue font-bold
+}
+.get-started div.wpcf7 form p:nth-child(4){
+	@apply text-xl text-stub-blue font-bold
+}
+.get-started div.wpcf7 form p:nth-child(5){
+	@apply text-xl text-stub-blue font-bold max-w-[520px]
+}
+.get-started div.wpcf7 form p:nth-child(6){
+	@apply text-xl text-stub-blue font-bold max-w-[520px]
+}
+.get-started div.wpcf7 form p:nth-child(6) span{
+	@apply text-xl text-text-blue  max-w-[520px] font-normal
+}
+ .get-started div.wpcf7 form p:nth-child(6) span span{
+	@apply flex flex-col
+}
+ .get-started div.wpcf7 form p:nth-child(6) span span span label{
+	@apply flex
+}
+/* .get-started div.wpcf7 form p:nth-child(6) span span span{
+	@apply flex flex-row
+}  */
+.get-started div.wpcf7 form p:nth-child(7) {
+	@apply bg-stub-blue text-white text-2xl font-bold text-center rounded-lg py-3 !mt-8
+}
+.get-started div.wpcf7 form p:nth-child(7) span {
+	@apply hidden
+}
+/* @apply  bg-pale-blue border border-deep-blue rounded-xl px-12 py-16 */

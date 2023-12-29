@@ -9,9 +9,9 @@
 
 ?>
 
-<header id="masthead" class="flex justify-between">
+<header id="masthead" class="flex flex-col md:flex-row justify-between">
 
-	<div>
+	<div class="ml-auto mr-auto  md:ml-12 lg:ml-24 my-4 md:my-10 lg:max-w-none max-w-44">
 	<?php
 		if ( function_exists( 'the_custom_logo' ) ) {
 		the_custom_logo();
@@ -20,7 +20,7 @@
 	</div>
 
 	<?php if ( is_active_sidebar( 'header-widget-area' ) ) : ?>
-    	<div id="header-widget-area" class="hw-widget widget-area flex" role="complementary">
+    	<div id="header-widget-area" class="hw-widget widget-area flex flex-col md:flex-row my-4 md:my-10" role="complementary">
         	<?php dynamic_sidebar( 'header-widget-area' ); ?>
     	</div>
 	<?php endif; ?>

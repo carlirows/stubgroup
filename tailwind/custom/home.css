@@ -1,0 +1,13 @@
+/* banner styles */
+.wp-block-cover .wp-block-cover__image-background{
+    @apply !h-14 !w-14
+}
+/* .wp-block-cover .wp-block-cover__inner-container h1{
+
+}
+.wp-block-cover .wp-block-cover__inner-container ul{
+
+}
+.wp-block-cover .wp-block-cover__inner-container .wp-block-buttons .wp-block-button a{
+
+} */

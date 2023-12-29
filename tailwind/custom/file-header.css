@@ -21,3 +21,19 @@ _tw is distributed under the terms of the GNU GPL v2 or later.
 _tw is based on Underscores https://underscores.me/ and Varia https://github.com/Automattic/themes/tree/master/varia, (C) 2012-2023 Automattic, Inc.
 Underscores and Varia are distributed under the terms of the GNU GPL v2 or later.
 */
+
+#header-widget-area {
+    @apply hidden md:flex
+}
+#header-widget-area aside {
+    @apply flex items-center mr-12 lg:mr-24
+}
+#header-widget-area aside:nth-child(1) {
+    @apply mr-5
+}
+#header-widget-area aside:nth-child(2) .wp-block-buttons .wp-block-button a {
+    @apply bg-stub-blue hover:bg-transparent hover:outline hover:outline-2 hover:outline-stub-blue hover:text-stub-blue text-white lg:px-16 px-12 py-4 text-lg lg:text-2xl rounded-lg font-bold
+}
+#header-widget-area aside h3 {
+    @apply text-lg lg:text-2xl font-medium text-deep-blue
+}
